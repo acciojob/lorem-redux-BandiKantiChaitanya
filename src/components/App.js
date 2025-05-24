@@ -12,9 +12,9 @@ const App = () => {
     .then(response=>response.json())
     .then(info=>{
       dispatch(setData(info))
-      setLoading(false) })
+      setTimeout(() => setLoading(false), 300) })
     .catch(err=>console.log('error occured',err))
-  },[])
+  },[dispatch])
   let [loading,setLoading]=useState(true)
   // console.log(data)
   return (
@@ -30,8 +30,11 @@ const App = () => {
             {
               data.map((dta) => (
                 <li key={dta.id} className="card">
-                   <h4 className="title"  >{dta.title}</h4>
-                   <p className="body" >{dta.body}</p>
+                   <h4  >Title :</h4>  
+              <p className="title" >{dta.title}</p>
+
+              <h4>Body :</h4>  
+              <p className="body" >{dta.body}</p>
                 </li>
               ))
             }
