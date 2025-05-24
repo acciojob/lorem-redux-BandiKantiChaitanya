@@ -24,9 +24,4 @@
     gap: 20px;
     list-style: none;
 }
-.label, .content {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-  }
-  
+
