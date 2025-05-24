@@ -1,1 +1,27 @@
-
+.heading{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.subHeading{
+    text-align: center;
+    font-size: 22px;
+    margin: 0px;
+}
+section{
+    flex: 0 0 calc(50% - 20px); /* each card takes ~50% width minus the gap */
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* background-color: #fff; */
+    /* border-radius: 8px; */
+    box-sizing: border-box;
+    font-size: larger;
+}
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
