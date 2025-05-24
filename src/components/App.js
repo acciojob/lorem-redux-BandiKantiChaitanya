@@ -22,8 +22,7 @@ const App = () => {
         {/* Do not remove the main div */}
         <h1 className="heading" >A short Naration of Lorem Ipsum</h1>
          
-        <p className="subHeading" ><b>Below Contains A title and Body gotten froma<br />
-        random API, Please take your time to Review</b></p>
+        <p className="subHeading" ><b>Below Contains A title and Body gotten froma random API, Please take your time to Review</b></p>
         {loading &&  <h4>Loading...</h4> }
         {
           !loading &&
@@ -31,10 +30,8 @@ const App = () => {
             {
               data.map((dta) => (
                 <li key={dta.id} className="card">
-                   <h4 className="title">Title :</h4>
-                   <p className="content">{dta.title}</p>
-                   <h4 className="body">Body :</h4>
-                   <p className="content">{dta.body}</p>
+                   <h4 className="title"  >{dta.title}</h4>
+                   <p className="body" >{dta.body}</p>
                 </li>
               ))
             }
